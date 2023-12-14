@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <h2>Lista de Alumnos</h2>
+
+    <ul class="lista-alumnos">
+        <li class="alumno">
+            <h3>Israel</h3>
+            <p>Edad: 31</p>
+            <ul class="calificaciones">
+                <li>Matemáticas: 90</li>
+                <li>Historia: 85</li>
+            </ul>
+        </li>
+
+        <li class="alumno">
+            <h3>Antonio</h3>
+            <p>Edad: 33</p>
+            <ul class="calificaciones">
+                <li>Biología: 88</li>
+                <li>Química: 95</li>
+            </ul>
+        </li>
+
+        <ul class="lista-alumnos">
+            <li class="alumno">
+                <h3>Jose</h3>
+                <p>Edad: 33</p>
+                <ul class="calificaciones">
+                    <li>Matemáticas: 90</li>
+                    <li>Historia: 85</li>
+                </ul>
+            </li>
+
+            <ul class="lista-alumnos">
+                <li class="alumno">
+                    <h3>Itzel</h3>
+                    <p>Edad: 30</p>
+                    <ul class="calificaciones">
+                        <li>Matemáticas: 90</li>
+                        <li>Historia: 85</li>
+                    </ul>
+                </li>
+
+                <ul class="lista-alumnos">
+                    <li class="alumno">
+                        <h3>Alex</h3>
+                        <p>Edad: 27</p>
+                        <ul class="calificaciones">
+                            <li>Matemáticas: 90</li>
+                            <li>Historia: 85</li>
+                        </ul>
+                    </li>
+    </ul>
+
+    <button onclick="darDeAltaAlumno()">Dar de Alta Alumno</button>
+    <button onclick="inscribirAlumnoAClase(alumno1, 'Matemáticas')">Inscribir a Matemáticas</button>
+    <button onclick="agregarCalificacionesAlumno(alumno1, 'Matemáticas', 90)">Agregar Calificación</button>
+    <button onclick="crearGrupo('Grupo1', [alumno1, alumno2])">Crear Grupo</button>
+    <button onclick="buscarAlumnoPorNombre('Juan')">Buscar por Nombre</button>
+    <button onclick="buscarAlumnoPorApellido('Pérez')">Buscar por Apellido</button>
+    <button onclick="obtenerPromedioAlumno(alumno1)">Obtener Promedio del Alumno</button>
+    <button onclick="obtenerPromedioGrupo(grupo1)">Obtener Promedio del Grupo</button>
+    <button onclick="obtenerListaAlumnosOrdenadosAscendente()">Ordenar Alumnos Ascendente</button>
+    <button onclick="obtenerListaAlumnosOrdenadosDescendente()">Ordenar Alumnos Descendente</button>
+    
+</body>
+</html>

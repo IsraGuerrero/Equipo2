@@ -1,0 +1,22 @@
+ul.lista-alumnos {
+    list-style-type: none;
+    padding: 0;
+}
+
+li.alumno {
+    border: 1px solid #ddd;
+    margin: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+
+ul.lista-alumnos li.alumno .calificaciones {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.lista-alumnos li.alumno .calificaciones li {
+    margin-bottom: 5px;
+}
