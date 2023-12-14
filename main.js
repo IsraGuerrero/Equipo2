@@ -1,5 +1,5 @@
 class Alumno{ 
-    constructor(nombre, apellido, edad, materiasInscritas = [], calificaciones = []) {
+    constructor(nombre, apellido, edad, materiasInscritas, calificaciones) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
@@ -22,7 +22,7 @@ class Alumno{
         return sum / numMaterias; 
     }
 
-    function agregarAlumno(nombre, apellido, edad, materiasInscritas, calificaciones){
-
+    static agregarAlumno(nombre, apellido, edad, materiasInscritas, calificaciones){
+        const nuevoAlumno = new Alumno(nombre, apellido, edad, materiasInscritas, calificaciones);
     }
 }
