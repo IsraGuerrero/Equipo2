@@ -6,70 +6,59 @@
     <title>Proyecto</title>
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
+    <script src="front.js"></script>
 </head>
 <body>
-    <h2>Lista de Alumnos</h2>
+    <header>
+    <h1> Control.Doc</h1>
+    </header>
+    
+    <section id="perfil">
+    <img src="https://pbs.twimg.com/profile_images/1255239562772852738/hHgiV9bj_400x400.jpg" alt="fotodeperfil"> 
+    <h4 id="Bienvenido"> Bienvenido, JulioProfe</h4>
+    </section>
 
-    <ul class="lista-alumnos">
-        <li class="alumno">
-            <h3>Israel</h3>
-            <p>Edad: 31</p>
-            <ul class="calificaciones">
-                <li>Matemáticas: 90</li>
-                <li>Historia: 85</li>
-            </ul>
-        </li>
+    <section id="menu"> 
+        <div class="container">
+            <div class="tab_box">
+                <button class="tab_btn">Inicio</button>
+                <button class="tab_btn">Alumnos</button>
+                <button class="tab_btn">Grupos</button>
+                <button class="tab_btn">Materias</button>  
+            </div>
+            <div class="content_box">
+                
+                <div class="content">
+                    <h2> Inicio </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate modi, ut animi repellat voluptatibus delectus. Modi accusamus quidem, quasi iure optio voluptatum laboriosam nostrum in ad dicta numquam velit incidunt! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus sint dolore, reiciendis minus labore impedit repellat sunt tempore fuga omnis? 
+                    </p>
+                </div>
 
-        <li class="alumno">
-            <h3>Antonio</h3>
-            <p>Edad: 33</p>
-            <ul class="calificaciones">
-                <li>Biología: 88</li>
-                <li>Química: 95</li>
-            </ul>
-        </li>
+                <div class="content">
+                    <h2> Alumnos </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate modi, ut animi repellat voluptatibus delectus. Modi accusamus quidem, quasi iure optio voluptatum laboriosam nostrum in ad dicta numquam velit incidunt! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus sint dolore, reiciendis minus labore impedit repellat sunt tempore fuga omnis? 
+                    </p>
+                </div>
 
-        <ul class="lista-alumnos">
-            <li class="alumno">
-                <h3>Jose</h3>
-                <p>Edad: 33</p>
-                <ul class="calificaciones">
-                    <li>Matemáticas: 90</li>
-                    <li>Historia: 85</li>
-                </ul>
-            </li>
+                <div class="content">
+                    <h2> Grupos </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate modi, ut animi repellat voluptatibus delectus. Modi accusamus quidem, quasi iure optio voluptatum laboriosam nostrum in ad dicta numquam velit incidunt! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus sint dolore, reiciendis minus labore impedit repellat sunt tempore fuga omnis? 
+                    </p>
+                </div>
 
-            <ul class="lista-alumnos">
-                <li class="alumno">
-                    <h3>Itzel</h3>
-                    <p>Edad: 30</p>
-                    <ul class="calificaciones">
-                        <li>Matemáticas: 90</li>
-                        <li>Historia: 85</li>
-                    </ul>
-                </li>
+                <div class="content">
+                    <h2> Materias </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate modi, ut animi repellat voluptatibus delectus. Modi accusamus quidem, quasi iure optio voluptatum laboriosam nostrum in ad dicta numquam velit incidunt! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus sint dolore, reiciendis minus labore impedit repellat sunt tempore fuga omnis? 
+                    </p>
+                </div>
 
-                <ul class="lista-alumnos">
-                    <li class="alumno">
-                        <h3>Alex</h3>
-                        <p>Edad: 27</p>
-                        <ul class="calificaciones">
-                            <li>Matemáticas: 90</li>
-                            <li>Historia: 85</li>
-                        </ul>
-                    </li>
-    </ul>
-
-    <button onclick="darDeAltaAlumno()">Dar de Alta Alumno</button>
-    <button onclick="inscribirAlumnoAClase(alumno1, 'Matemáticas')">Inscribir a Matemáticas</button>
-    <button onclick="agregarCalificacionesAlumno(alumno1, 'Matemáticas', 90)">Agregar Calificación</button>
-    <button onclick="crearGrupo('Grupo1', [alumno1, alumno2])">Crear Grupo</button>
-    <button onclick="buscarAlumnoPorNombre('Juan')">Buscar por Nombre</button>
-    <button onclick="buscarAlumnoPorApellido('Pérez')">Buscar por Apellido</button>
-    <button onclick="obtenerPromedioAlumno(alumno1)">Obtener Promedio del Alumno</button>
-    <button onclick="obtenerPromedioGrupo(grupo1)">Obtener Promedio del Grupo</button>
-    <button onclick="obtenerListaAlumnosOrdenadosAscendente()">Ordenar Alumnos Ascendente</button>
-    <button onclick="obtenerListaAlumnosOrdenadosDescendente()">Ordenar Alumnos Descendente</button>
+            </div>
+        </div>
+    </section>
     
 </body>
 </html>
