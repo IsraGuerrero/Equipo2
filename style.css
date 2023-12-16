@@ -5,25 +5,41 @@
 }
 
 body{
-    background-color: 	#fff1e6;
-    display: flex;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1.5fr 1.5fr;
+    grid-template-areas: 
+    "header header header header"
+    "perfil content content content"
+    "tab content content content"
+    "tab content content content";
+    grid-gap: 0.5rem;
+    text-align: center;
+}
+
+body{
+    background-color: #c0c5ce;
+    display: grid;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    color: white;
 }
 
 .container{
     width: 300px;
-    background-color: 	#eddcd2;
-    padding: 30px;
+    background-color: 	#65737e;
+    padding: 10px;
     box-shadow: 0 2px 16px rgb(0, 0, 0, .1);
     border-radius: 20px;
 }
 
 .tab_box{
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-area: tab;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -46,13 +62,36 @@ body{
 }
 
 .content_box{
+    grid-area: content;
     padding: 20px;
 }
 
 .content_box .content { 
-    display: none;
+    background-color: 	#65737e;
 }
 
 .content_box .content h2{ 
     margin-left: 10px;
+}
+
+#perfil{
+    grid-area: perfil; 
+    font-size: 30px;
+    font-weight: bolder;
+    color: blueviolet; 
+    width: 300px;
+    background-color: #a5a58d;
+    padding: 10px;
+    box-shadow: 0 2px 16px rgb(0, 0, 0, .1);
+    border-radius: 20px;
+}
+
+#perfil img{ 
+    height: 200px;
+    border-radius: 10%;
+}
+
+#header{ 
+    font-size: 30px;
+    grid-area: header;  
 }
